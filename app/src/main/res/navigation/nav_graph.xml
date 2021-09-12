@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/zooAreaFragment">
+
+    <fragment
+        android:id="@+id/zooAreaFragment"
+        android:name="com.sample.zoopark.area.views.ZooAreaFragment"
+        android:label="臺北市立動物園" >
+        <action
+            android:id="@+id/action_zooAreaFragment_to_zooAreaDetailsFragment"
+            app:destination="@id/zooAreaDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/zooAreaDetailsFragment"
+        android:name="com.sample.zoopark.areadetails.views.ZooAreaDetailsFragment"
+        android:label="{Title}">
+
+        <argument
+            android:name="ZooAreaData"
+            app:argType="com.sample.zoopark.area.models.ZooAreaData"/>
+
+        <action
+            android:id="@+id/action_zooAreaDetailsFragment_to_plantFragment"
+            app:destination="@id/plantFragment" />
+        <argument
+            android:name="Title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/plantFragment"
+        android:name="com.sample.zoopark.plant.views.PlantFragment"
+        android:label="{Title}" >
+        <argument
+            android:name="PlantData"
+            app:argType="com.sample.zoopark.plant.models.PlantData" />
+        <argument
+            android:name="Title"
+            app:argType="string" />
+    </fragment>
+
+
+</navigation>

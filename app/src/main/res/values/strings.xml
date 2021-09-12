@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ZooPark</string>
+
+    <string name="intenet_not_connected">There is no internet connection</string>
+
+    <string name="plant_also_known_text">別名</string>
+    <string name="plant_brief_text">簡介</string>
+    <string name="plant_feature_text">辨認方式</string>
+    <string name="plant_function_text">功能性</string>
+    <string name="plant_last_update_text">最後更新</string>
+    <string name="plant_header_text">植物資料</string>
+    <string name="plant_no_data_text">此館沒有植物展示唷</string>
+
+    <string name="zoo_link_text">在網頁開啟</string>
+
+</resources>
