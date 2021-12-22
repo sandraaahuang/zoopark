@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         AppCenter.start(
-            application, "f3cad314-fbee-4e12-9fa0-9baf7dbeff00",
+            application, "31b6994b-6966-4718-9348-db8d0c03e44e",
             Analytics::class.java, Crashes::class.java
         )
 
