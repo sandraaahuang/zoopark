@@ -6,9 +6,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 
 
 class MainActivity : AppCompatActivity() {
+
+
 
     private var navController: NavController? = null
 
@@ -21,6 +26,11 @@ class MainActivity : AppCompatActivity() {
         navController?.let {
             NavigationUI.setupActionBarWithNavController(this, it)
         }
+
+        AppCenter.start(
+            application, "31b6994b-6966-4718-9348-db8d0c03e44e",
+            Analytics::class.java, Crashes::class.java
+        )
 
     }
 
